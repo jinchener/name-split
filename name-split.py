@@ -122,13 +122,13 @@ with open('input.txt') as file:
                 elif contain(lineu, i, i, u''):
                     work += 1
                 # 判断地名+'一'
-                elif contain(lineu, i, u'一', u''):
+                elif (i+u'一') in lineu: #contain(lineu, i, u'一', u''):
                     work += 1
                 else:
                     pass
-            for i in contt:
-                if contain(lineu,i,u'公司',u''):
-                    work +=1
+            #for i in contt:
+            #    if contain(lineu,i,u'公司',u''):
+            #        work +=1
 
             for i in numlist:
                 if contain(lineu, u'日本', i, u'大') or contain(lineu, u'日本', i, u'家') or contain(lineu, u'世界', i, u'大'):
